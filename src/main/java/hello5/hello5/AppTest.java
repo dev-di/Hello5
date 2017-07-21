@@ -28,16 +28,22 @@ public class AppTest
         return new TestSuite( AppTest.class );
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
+    public void testTrue()
     {
         assertTrue( true );
     }
     
     /**
-     * Fail
+     * 
+     */
+    public void testHello()
+    {
+    	App app = new App();
+        assertEquals("Hello World", app.getMessage());
+    }    
+    
+    /**
+     * 
      */
     public void testDummy()
     {
